@@ -113,5 +113,35 @@ The padEnd() method pads the current string with a given string (repeated, if ne
 padEnd(targetLength)
 padEnd(targetLength, padString)
 ```
+<hr>
+
+### quotes & background feature
+
+### Math
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+<br>
+- Math.random() <br>
+The Math.random() static method returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1, with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user. <br>
+
+- Math.round() <br>
+The Math.round() static method returns the value of a number rounded to the nearest integer. <br>
+
+- Math.ceil() <br>
+The Math.ceil() static method always rounds up and returns the smaller integer greater than or equal to a given number. <br>   
+
+- Math.floor() <br>
+The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number. <br>
+
+### Document: createElement() method
+
+In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized. <br>
+
+```javascript
+createElement(tagName)
+createElement(tagName, options)
+```
+<hr>
+
 ___
 the source from MDN(https://developer.mozilla.org/en-US/)
