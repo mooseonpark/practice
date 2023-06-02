@@ -28,8 +28,8 @@ if (savedUsername === null) {
 	paintGreetings();
 }
 
-const remove = document.querySelector('.remove');
-remove.addEventListener('click', () => {
+const removeLocalstorage = document.querySelector('.remove');
+removeLocalstorage.addEventListener('click', () => {
 	localStorage.removeItem(USERNAME_KEY);
 	location.reload();
 });
