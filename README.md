@@ -7,10 +7,10 @@
 > ## <momentum_clone>
 ### login feature
 
-#### Element: **classList** property
+### Element: **classList** property
 The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
 
-#### value : 
+### value : 
 - add() <br>
 The add() method of the DOMTokenList interface adds the given tokens to the list, omitting any that are already present.
 
@@ -36,9 +36,9 @@ toggle(token, force) force for only be removed or added
 
 <hr>
 
-#### Storage
+## Storage
 
-#### Instance methods :
+### Instance methods :
 - getItem() <br>
 The getItem() method of the Storage interface, when passed a key name, will return that key's value, or null if the key does not exist, in the given Storage object.
 
@@ -77,7 +77,7 @@ key(index)
 
 <hr>
 
-### clock feature
+## clock feature
 
 ### date
 
@@ -115,7 +115,7 @@ padEnd(targetLength, padString)
 ```
 <hr>
 
-### quotes & background feature
+## quotes & background feature
 
 ### Math
 
@@ -140,6 +140,17 @@ In an HTML document, the document.createElement() method creates the HTML elemen
 ```javascript
 createElement(tagName)
 createElement(tagName, options)
+```
+
+### Document: prepend() method
+
+The Document.prepend() method inserts a set of Node objects or string objects before the first child of the document. String objects are inserted as equivalent Text nodes. <br>
+
+
+```javascript
+prepend(param1)
+prepend(param1, param2)
+prepend(param1, param2, /* … ,*/ paramN)
 ```
 <hr>
 
