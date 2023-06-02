@@ -75,8 +75,43 @@ key(index)
 #### Event.preventDefault()
 - The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
 
+<hr>
 
- 
+### clock feature
 
+### date
+
+- new Date()
+<br>
+
+![image](https://github.com/mooseonpark/practice/assets/66548209/7ca78c16-3514-447c-9453-15c84246281a)
+<br>
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+- setInterval() <br>
+The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. <br>
+This method returns an **interval ID** which uniquely identifies the interval, so you can remove it later by calling clearInterval(). <br>
+
+```javascript
+setInterval(code)
+setInterval(code, delay)
+```
+<br>
+
+- padStart() <br>
+The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
+
+```javascript
+padStart(targetLength)
+padStart(targetLength, padString)
+
+``` 
+- padEnd() <br>
+The padEnd() method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string.
+
+```javascript
+padEnd(targetLength)
+padEnd(targetLength, padString)
+```
 ___
 the source from MDN(https://developer.mozilla.org/en-US/)
