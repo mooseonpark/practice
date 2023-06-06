@@ -33,3 +33,6 @@ removeLocalstorage.addEventListener('click', () => {
 	localStorage.removeItem(USERNAME_KEY);
 	location.reload();
 });
+
+// form을 submit하면 브라우저는 기본적으로 페이지를 새로고침 함
+// preventDefault() 함수를 추가함으로써 브라우저의 기본 동작을 막을 수 있음

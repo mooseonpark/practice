@@ -11,20 +11,31 @@
 
 <body>
   <h1 id="greeting" class="hidden"></h1>
+  <h2 id='clock'>00:00:00</h2>
+
   <form id='login-form' class='hidden' action="">
     <input type="text" placeholder="hi, what is your name?">
     <button>login</button>
   </form>
-  <h2 id='clock'>00:00:00</h2>
+
+  <form id="todo-form">
+    <input type="text" placeholder="write things you should do today" required>
+  </form>
+  <ul id="todo-list">
+  </ul>
+
   <div id="quote">
     <span></span>
     <span></span>
   </div>
+
   <button class="remove">유저 이름 삭제</button>
+
   <script src="./js/greetings.js"></script>
   <script src="./js/clock.js"></script>
   <script src="./js/quote.js"></script>
   <script src="./js/background.js"></script>
+  <script src="./js/todo.js"></script>
 </body>
 
 </html>
