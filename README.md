@@ -4,13 +4,13 @@
 <hr>
 
 ## what i learned from -
-> ## <momentum_clone>
-### login feature
+> ## momentum_clone
+## < login feature >
 
-#### Element: **classList** property
+### #Element: **classList** property
 The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
 
-#### value : 
+### value : 
 - add() <br>
 The add() method of the DOMTokenList interface adds the given tokens to the list, omitting any that are already present.
 
@@ -36,9 +36,9 @@ toggle(token, force) force for only be removed or added
 
 <hr>
 
-#### Storage
+### #Storage
 
-#### Instance methods :
+### Instance methods :
 - getItem() <br>
 The getItem() method of the Storage interface, when passed a key name, will return that key's value, or null if the key does not exist, in the given Storage object.
 
@@ -69,23 +69,16 @@ The key() method of the Storage interface, when passed a number n, returns the n
 ```javascript
 key(index)
 ```
-
+ 
 <hr>
 
-#### Event.preventDefault()
-- The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
+## < clock feature >
 
-<hr>
+### #date
 
-### clock feature
+- new Date() <br>
 
-### date
-
-- new Date()
-<br>
-
-![image](https://github.com/mooseonpark/practice/assets/66548209/7ca78c16-3514-447c-9453-15c84246281a)
-<br>
+![image](https://github.com/mooseonpark/practice/assets/66548209/7ca78c16-3514-447c-9453-15c84246281a) <br>
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date
 
 - setInterval() <br>
@@ -115,12 +108,12 @@ padEnd(targetLength, padString)
 ```
 <hr>
 
-### quotes & background feature
+## < quotes & background feature >
 
-### Math
+### #Math
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
-<br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math <br>
+
 - Math.random() <br>
 The Math.random() static method returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1, with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user. <br>
 
@@ -133,15 +126,109 @@ The Math.ceil() static method always rounds up and returns the smaller integer g
 - Math.floor() <br>
 The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number. <br>
 
-### Document: createElement() method
+### #Document: createElement() method
 
-In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized. <br>
+- In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized. <br>
 
 ```javascript
 createElement(tagName)
 createElement(tagName, options)
 ```
+
+### #Document: prepend() method
+
+- The Document.prepend() method fs a set of Node objects or string objects before the first child of the document. String objects are inserted as equivalent Text nodes. <br>
+
+
+```javascript
+prepend(param1)
+prepend(param1, param2)
+prepend(param1, param2, /* … ,*/ paramN)
+```
 <hr>
 
+## < todo list feature >
+
+- appendchild() <br>
+The appendChild() method of the Node interface adds a node to the end of the list of children of a specified parent node. <br>
+
+- removeChild() <br>
+The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node. <br>
+
+- insertBefore() <br>
+The insertBefore() method of the Node interface inserts a node before a reference node as a child of a specified parent node. <br>
+
+```javascript
+insertBefore(newNode, referenceNode)
+```
+- console.dir() <br>
+The method console.dir() displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects. <br>
+
+### #storage
+
+The Storage interface of the Web Storage API provides access to a particular domain's session or local storage. It allows, for example, the addition, modification, or deletion of stored data items. <br>
+
+- Storage.key() <br>
+When passed a number n, this method will return the name of the nth key in the storage. <br>
+
+- Storage.getItem() <br>
+When passed a key name, will return that key's value. <br>
+
+- Storage.setItem() <br>
+When passed a key name and value, will add that key to the storage, or update that key's value if it already exists. <br>
+
+- Storage.removeItem() <br>
+When passed a key name, will remove that key from the storage. <br>
+
+- Storage.clear() <br>
+When invoked, will empty all keys out of the storage. <br>
+
+### #event
+https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+- The Event interface represents an event which takes place in the DOM. <br>
+- An event can be triggered by the user action e.g. clicking the mouse button or tapping keyboard, or generated by APIs to represent the progress of an asynchronous task. It can also be triggered programmatically, such as by calling the HTMLElement.click() method of an element, or by defining the event, then sending it to a specified target using EventTarget.dispatchEvent(). <br>
+- There are many types of events, some of which use other interfaces based on the main Event interface. Event itself contains the properties and methods which are common to all events. <br>
+- Many DOM elements can be set up to accept (or "listen" for) these events, and execute code in response to process (or "handle") them. Event-handlers are usually connected (or "attached") to various HTML elements (such as <button>, <div>, <span>, etc.) using EventTarget.addEventListener(), and this generally replaces using the old HTML event handler attributes. Further, when properly added, such handlers can also be disconnected if needed using removeEventListener(). <br>
+
+### Instance properties
+
+- event.target  <br>
+The read-only target property of the Event interface is a reference to the object onto which the event was dispatched.  <br>
+It is different from *Event.currentTarget* when the event handler is called during the bubbling or capturing phase of the event. <br>
+
+- event.currentTarget <br>
+The currentTarget read-only property of the Event interface identifies the current target for the event, as the event traverses the DOM.  <br>
+It always refers to the element to which the event handler has been attached, as opposed to Event.target, which identifies the element on which the event occurred and which may be its descendant. <br>
+
+### Instance methods
+
+- event.preventDefault()  <br>
+The preventDefault() method of the Event interface tells the user agent that if the event does not get explicitly handled, its default action should not be taken as it normally would be. <br>
+The event continues to propagate as usual, unless one of its event listeners calls stopPropagation() or stopImmediatePropagation(), either of which terminates propagation at once. <br>
+
+### #JSON
+  
+- The JSON namespace object contains static methods for parsing values from and converting values to JavaScript Object Notation (JSON). <br>
+
+### methods
+
+  - JSON.stringify() <br>
+The JSON.stringify() static method converts a JavaScript value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified. <br>
+  
+  - JSON.parse() <br>
+  The JSON.parse() static method parses a JSON string, constructing the JavaScript value or object described by the string. An optional reviver function can be provided to perform a transformation on the resulting object before it is returned. <br>
+
+```javascript
+JSON.stringify(value) // The value to convert to a JSON string.
+JSON.stringify(value, replacer)
+JSON.stringify(value, replacer, space)
+  
+JSON.parse(text) // The string to parse as JSON. See the JSON object for a description of JSON syntax.
+JSON.parse(text, reviver)
+  ```
+
+
+ 
 ___
 the source from MDN(https://developer.mozilla.org/en-US/)
