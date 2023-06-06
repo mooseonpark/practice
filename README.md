@@ -227,8 +227,15 @@ JSON.stringify(value, replacer, space)
 JSON.parse(text) // The string to parse as JSON. See the JSON object for a description of JSON syntax.
 JSON.parse(text, reviver)
   ```
+<hr>
+ 
+## Geolocation API
+ 
+The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information. <br>
+WebExtensions that wish to use the Geolocation object must add the "geolocation" permission to their manifest. The user's operating system will prompt the user to allow location access the first time it is requested. <br>
 
-
+- Geolocation.getCurrentPosition(): Retrieves the device's current location.
+- Geolocation.watchPosition(): Registers a handler function that will be called automatically each time the position of the device changes, returning the updated location.
  
 ___
 the source from MDN(https://developer.mozilla.org/en-US/)
